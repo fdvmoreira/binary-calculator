@@ -21,62 +21,19 @@ body{
     padding: 10px;
 }
 
-/** Buttons **
+/** Buttons **/
 
-#btns{
-    display: grid;
-    grid-template-areas: "btn-zero btn-one btn-clear btn-equal"
-                        " btn-plus btn-minus btn-multiply btn-divide";
-
-}
-
-#btn0{
-    grid-area: btn-zero;
-}
-
-#btn1{
-    grid-area: btn-one;
-}
-
-#btnClr{
-    grid-area: btn-clear;
-}
-
-#btnEql{
-    grid-area: btn-equal;
-}
-
-#btnSum{
-    grid-area: btn-plus;
-}
-
-#btnSub{
-    grid-area: btn-minus;
-}
-
-#btnMul{
-    grid-area: btn-multiply;
-}
-
-#btnDiv{
-    grid-area: btn-divide;
-}
-
-*/
-
-
-
-.bg-light-green, .brow{
+#btn0, #btn1{
     background-color: lightgreen;
     color: brown;
 }
 
-.bg-dark-green, .white{
+#btnClr, #btnEql{
     background-color: darkgreen;
     color: white;
 }
 
-.bg-black, .red{
+#btnSum, #btnSub, #btnMul, #btnDiv{
     background-color: black;
     color: red;
 }
