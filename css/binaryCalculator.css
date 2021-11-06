@@ -6,15 +6,89 @@
 }
 
 body{
-    width: 30%;
+    width: 33%;
     margin: auto;
     background-color: red;
 }
 
+/** Display UI **/
 #res{
+    width: 100%;
     background-color: lightgray;
-    border: 1px solid;
+    border: 0px solid;
     height: 48px;
     font-size: 20px;
-    padding: 5px;
+    padding: 10px;
 }
+
+/** Buttons **
+
+#btns{
+    display: grid;
+    grid-template-areas: "btn-zero btn-one btn-clear btn-equal"
+                        " btn-plus btn-minus btn-multiply btn-divide";
+
+}
+
+#btn0{
+    grid-area: btn-zero;
+}
+
+#btn1{
+    grid-area: btn-one;
+}
+
+#btnClr{
+    grid-area: btn-clear;
+}
+
+#btnEql{
+    grid-area: btn-equal;
+}
+
+#btnSum{
+    grid-area: btn-plus;
+}
+
+#btnSub{
+    grid-area: btn-minus;
+}
+
+#btnMul{
+    grid-area: btn-multiply;
+}
+
+#btnDiv{
+    grid-area: btn-divide;
+}
+
+*/
+
+
+
+.bg-light-green, .brow{
+    background-color: lightgreen;
+    color: brown;
+}
+
+.bg-dark-green, .white{
+    background-color: darkgreen;
+    color: white;
+}
+
+.bg-black, .red{
+    background-color: black;
+    color: red;
+}
+
+#btns>button{
+    width: 25%;
+    height: 36px;
+    font-size: 18px;
+    margin: 0px;
+    float: left;
+}
+
+
+
+
