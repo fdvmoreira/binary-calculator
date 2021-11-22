@@ -1,51 +1,62 @@
 /* clear default styling */
-*{
+
+*,
+*::after,
+*::before,
+:root {
+    --bg-color-dark: rgb(28, 29, 28);
+    --bg-button-selected-dark: rgb(20, 20, 20);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: var(--bg-color-dark);
+    font-size: 1.4rem;
+    color: rgb(169, 159, 159);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-body{
-    width: 33%;
-    margin: auto;
-    background-color: red;
+body {
+    height: 100vh;
+    width: 100vw;
+    border: 1px dashed lightslategray;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
 }
 
-/** Display UI **/
-#res{
+.container {
+    min-width: 320px;
+    max-width: 768px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.display {
     width: 100%;
-    background-color: lightgray;
-    border: 0px solid;
-    height: 48px;
-    font-size: 20px;
-    padding: 10px;
+    height: 50px;
+    padding: 5px;
+    cursor: crosshair;
+    background-color: var(--bg-button-selected-dark);
+    box-shadow: 1px 1px 7px black;
 }
 
-/** Buttons **/
-
-#btn0, #btn1{
-    background-color: lightgreen;
-    color: brown;
+.btns {
+    width: 100%;
+    display: grid;
+    gap: 2px;
+    grid-template-areas: "b-zero b-one b-clear b-equal" "b-plus b-minus b-times b-div";
 }
 
-#btnClr, #btnEql{
-    background-color: darkgreen;
-    color: white;
+.btn {
+    border-style: none;
+    border: 1px solid grey;
 }
 
-#btnSum, #btnSub, #btnMul, #btnDiv{
-    background-color: black;
-    color: red;
+.btn:hover {
+    background-color: var(--bg-button-selected-dark);
+    cursor: pointer;
+    color: whitesmoke;
+    border: 1px solid var(--bg-button-selected-dark);
 }
-
-#btns>button{
-    width: 25%;
-    height: 36px;
-    font-size: 18px;
-    margin: 0px;
-    float: left;
-}
-
-
-
-
