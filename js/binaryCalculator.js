@@ -18,9 +18,9 @@ let hasOperator = false;
 
 
 /** add text(numbers) to the display */
-for (const it of buttons) {
-    it.addEventListener("click", event => {
-        switch (it) {
+for (const button of buttons) {
+    button.addEventListener("click", () => {
+        switch (button) {
             case btnClear:
                 cleanUp();
                 cleanUpDisplay();
@@ -54,10 +54,10 @@ for (const it of buttons) {
                 }
 
                 break;
-                /** Enter the numbers to the display */
+            /** Enter the numbers to the display */
             case btnZero:
             case btnOne:
-                displayText += it.childNodes[0].textContent;
+                displayText += button.childNodes[0].textContent;
 
                 /** TODO remove line below */
                 console.log(displayText);
@@ -67,7 +67,7 @@ for (const it of buttons) {
             default:
                 /** Ensure that only one operator is added to the operations
                 by check the text already added **/
-                operator = it.childNodes[0].textContent;
+                operator = button.childNodes[0].textContent;
                 if (displayText.length >= 1 && !hasOperator) {
                     displayText += operator;
                     hasOperator = true;
