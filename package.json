@@ -1,0 +1,19 @@
+{
+  "name": "binarycalculator",
+  "version": "1.0.0",
+  "description": "Binary Calculator",
+  "main": "index.js",
+  "scripts": {
+    "deply": "gh-pages -b production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fdvmoreira/binaryCalculator.git"
+  },
+  "author": "Flavio Moreira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fdvmoreira/binaryCalculator/issues"
+  },
+  "homepage": "https://github.com/fdvmoreira/binaryCalculator#readme"
+}
