@@ -4,7 +4,8 @@
   "description": "Binary Calculator",
   "main": "index.js",
   "scripts": {
-    "deply": "gh-pages -b production"
+    "deploy": "gh-pages -b production",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/fdvmoreira/binaryCalculator/issues"
   },
-  "homepage": "https://github.com/fdvmoreira/binaryCalculator#readme"
+  "homepage": "https://github.com/fdvmoreira/binaryCalculator#readme",
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0"
+  }
 }
