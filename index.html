@@ -5,26 +5,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Binary Calculator</title>
-    <link rel="stylesheet" href="css/binaryCalculator.css">
-    <script src="js/binaryCalculator.js" type="text/javascript" defer>
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon_package_v0.16/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon_package_v0.16/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon_package_v0.16/favicon-16x16.png">
+    <link rel="manifest" href="/favicon_package_v0.16/site.webmanifest">
+    <link rel="mask-icon" href="/favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>Binary Number Calculator</title>
+    <link rel="stylesheet" href="css/binary-calculator.css">
+    <script type="module" src="js/binary-calculator.js" defer>
     </script>
 </head>
 
 <body>
     <div class="container">
-        <header style="font-size: 16px;font-weight:bolder;">Binary Calculator</header>
+        <header> Binary Numbers Calculator</header>
 
-        <div class="display" id="res"></div>
-        <div class="btns" id="btns">
-            <button class="btn" id="btn0">0</button>
-            <button class="btn" id="btn1">1</button>
-            <button class="btn" id="btnClr">C</button>
-            <button class="btn" id="btnEql">=</button>
-            <button class="btn" id="btnSum">+</button>
-            <button class="btn" id="btnSub">-</button>
-            <button class="btn" id="btnMul">*</button>
-            <button class="btn" id="btnDiv">/</button>
+        <div class="display" data-id="display"></div>
+        <div class="btns" data-id="btns">
+            <button class="btn" data-id="btn-0">0</button>
+            <button class="btn" data-id="btn-1">1</button>
+            <button class="btn" data-id="btn-clr">C</button>
+            <button class="btn" data-id="btn-eq">=</button>
+            <button class="btn" data-id="btn-sum">+</button>
+            <button class="btn" data-id="btn-sub">-</button>
+            <button class="btn" data-id="btn-mul">*</button>
+            <button class="btn" data-id="btn-div">/</button>
         </div>
     </div>
 </body>
