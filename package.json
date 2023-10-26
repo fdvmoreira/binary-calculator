@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "Binary Calculator",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "deploy": "gh-pages -b production",
-    "test": "jest"
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest"
   },
   "repository": {
     "type": "git",
