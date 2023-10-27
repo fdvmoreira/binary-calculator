@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "deploy": "gh-pages -b production",
-    "test": "NODE_OPTIONS=--experimental-vm-modules jest"
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest --setupFilesAfterEnv './jest.setup.js'"
   },
   "repository": {
     "type": "git",
