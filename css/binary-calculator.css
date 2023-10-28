@@ -1,0 +1,97 @@
+/* clear default styling */
+
+*,
+*::after,
+*::before,
+:root {
+  --bg-color-dark: rgb(28, 29, 28);
+  --bg-button-selected-dark: rgb(20, 20, 20);
+  --default-margin: 8px;
+  --default-padding: 4px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--bg-color-dark);
+  font-size: 1rem;
+  color: rgb(169, 159, 159);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+  font-size: 3rem;
+  text-align: center;
+}
+
+body {
+  display: block;
+  height: 100%;
+  margin: 0 auto;
+  padding: calc(var(--default-padding) * 3);
+}
+
+footer {
+  width: 100%;
+  /* text-align: center; */
+  padding: var(--default-padding);
+  position: absolute;
+  bottom: 0;
+}
+
+footer p {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.calculator {
+  border: 1px solid black;
+  width: 500px;
+  min-width: 320px;
+  margin: 64px auto 4px;
+  display: block;
+}
+
+.display {
+  width: 100%;
+  height: 50px;
+  background-color: var(--bg-button-selected-dark);
+  padding: calc(var(--default-padding) * 2);
+  text-align: center;
+  line-height: 2rem;
+  font-size: 1.5rem;
+}
+
+.btn-container {
+  width: 100%;
+  display: grid;
+  gap: 2px;
+  grid-template-areas: "b-zero b-one b-clear b-equal" "b-plus b-minus b-times b-div";
+}
+
+.btn {
+  border-style: none;
+  border: 1px solid black;
+  padding: calc(var(--default-padding) * 3);
+  transition: none 20ms background-color ease-in-out;
+  font-size: 1.5rem;
+}
+
+.btn:hover {
+  background-color: var(--bg-button-selected-dark);
+  cursor: pointer;
+  color: whitesmoke;
+  border: 1px solid var(--bg-button-selected-dark);
+}
+
+.note {
+  display: block;
+  color: gray;
+  text-align: center;
+  font-size: 0.8rem;
+}
