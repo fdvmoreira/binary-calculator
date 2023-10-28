@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "Binary Calculator",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "deploy": "gh-pages -b production -d ."
+    "deploy": "gh-pages -b production",
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest --verbose --coverage --setupFilesAfterEnv './jest.setup.js'"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/fdvmoreira/binaryCalculator/issues"
   },
-  "homepage": "https://github.com/fdvmoreira/binaryCalculator#readme"
+  "homepage": "https://github.com/fdvmoreira/binaryCalculator#readme",
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0"
+  }
 }
