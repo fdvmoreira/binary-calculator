@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1698528270921" clover="3.2.0">
-  <project timestamp="1698528270921" name="All files">
+<coverage generated="1698589411329" clover="3.2.0">
+  <project timestamp="1698589411329" name="All files">
     <metrics statements="78" coveredstatements="45" conditionals="34" coveredconditionals="14" methods="12" coveredmethods="10" elements="124" coveredelements="69" complexity="0" loc="78" ncloc="78" packages="1" files="1" classes="1"/>
     <file name="binary-calculator.js" path="/Users/moreira/lab/binary-calculator/js/binary-calculator.js">
       <metrics statements="78" coveredstatements="45" conditionals="34" coveredconditionals="14" methods="12" coveredmethods="10"/>
